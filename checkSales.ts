@@ -40,14 +40,14 @@ const buildMessage = (sale: any) => (
 
 async function main() {
   const channel = await discordSetup();
-  const seconds = process.env.SECONDS ? parseInt(process.env.SECONDS) : 180;
+  const seconds = process.env.SECONDS ? parseInt(process.env.SECONDS) : 3600;
   const hoursAgo = (Math.round(new Date().getTime() / 1000) - (seconds)); // in the last hour, run hourly?
   
   const params = new URLSearchParams({
     offset: '0',
     event_type: 'successful',
     only_opensea: 'false',
-    occurred_after: seconds.toString(), 
+    occurred_after: hoursAgo.toString(), 
     collection_slug: process.env.COLLECTION_SLUG!,
   })
 
