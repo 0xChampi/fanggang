@@ -23,7 +23,7 @@ const  discordSetup = async (): Promise<TextChannel> => {
 const buildMessage = (sale: any) => (
   new Discord.MessageEmbed()
 	.setColor('#0099ff')
-	.setTitle(sale.asset.name + ' has joined a new gang')
+	.setTitle(sale.asset.name + ' has joined a new gang!')
 	.setURL(sale.asset.permalink)
 	.setAuthor('OpenFang Bot', 'https://files.readme.io/566c72b-opensea-logomark-full-colored.png', 'https://opensea.io/collection/fanggangnft')
 	.setThumbnail(sale.asset.collection.image_url)
