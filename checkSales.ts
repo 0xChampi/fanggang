@@ -47,7 +47,7 @@ async function main() {
     offset: '0',
     event_type: 'successful',
     only_opensea: 'false',
-    occurred_after: hoursAgo.toString(), 
+    occurred_after: seconds.toString(), 
     collection_slug: process.env.COLLECTION_SLUG!,
   })
 
