@@ -3,7 +3,7 @@ import Discord, { TextChannel } from 'discord.js';
 import fetch from 'node-fetch';
 import { ethers } from "ethers";
 
-const OPENSEA_SHARED_STOREFRONT_ADDRESS = '0x495f947276749Ce646f68AC8c248420045cb7b5e';
+const OPENSEA_SHARED_STOREFRONT_ADDRESS = '0x9d418c2cae665d877f909a725402ebd3a0742844';
 
 const discordBot = new Discord.Client();
 const  discordSetup = async (): Promise<TextChannel> => {
