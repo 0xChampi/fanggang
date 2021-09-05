@@ -25,7 +25,7 @@ const buildMessage = (sale: any) => (
 	.setColor('#0099ff')
 	.setTitle(sale.asset.name + ' has joined a new gang!')
 	.setURL(sale.asset.permalink)
-	.setAuthor('OpenFang Bot', 'https://files.readme.io/566c72b-opensea-logomark-full-colored.png', 'https://opensea.io/collection/fanggangnft')
+	.setAuthor('OpenFang Bot', 'https://files.readme.io/566c72b-opensea-logomark-full-colored.png', 'https://cdn.discordapp.com/attachments/882377109102809108/883999332200751104/Fangster_BotSales.jpg')
 	.setThumbnail(sale.asset.collection.image_url)
 	.addFields(
 		{ name: 'Name', value: sale.asset.name },
