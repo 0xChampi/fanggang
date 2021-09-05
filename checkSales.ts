@@ -26,7 +26,7 @@ const buildMessage = (sale: any) => (
 	.setTitle(sale.asset.name + ' has joined a new gang!')
 	.setURL(sale.asset.permalink)
 	.setAuthor('OpenFang Bot', 'https://files.readme.io/566c72b-opensea-logomark-full-colored.png', 'https://opensea.io/collection/fanggangnft')
-	.setThumbnail(sale.asset.collection.image_url)
+	.setThumbnail('https://files.readme.io/566c72b-opensea-logomark-full-colored.png')
 	.addFields(
 		{ name: 'Name', value: sale.asset.name },
 		{ name: 'Amount', value: `${ethers.utils.formatEther(sale.total_price || '0')}${ethers.constants.EtherSymbol}`},
